@@ -172,17 +172,6 @@ npm run dev
 
 ---
 
-## 📸 Screenshots
-
-Add screenshots of:
-
-- Landing Page
-- About Page
-- Contact Page
-- Form Validation
-- Success Message
-- 404 Page
-
 ---
 
 ## 📈 Future Improvements
