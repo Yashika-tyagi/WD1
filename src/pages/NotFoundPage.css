@@ -1,0 +1,107 @@
+.notfound-page {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem;
+  position: relative;
+  background-image: var(--gradient-hero);
+  min-height: calc(100vh - 80px);
+}
+
+.notfound-glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.08) 0%, transparent 60%);
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+.notfound-container {
+  max-width: 520px;
+  width: 100%;
+  padding: 4rem 3rem;
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-color: rgba(239, 68, 68, 0.15);
+}
+
+.notfound-icon-box {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.broken-compass {
+  color: var(--error);
+  animation: jitter 4s infinite linear;
+}
+
+.question-badge {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-full);
+}
+
+.notfound-code {
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.notfound-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.notfound-description {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+@keyframes jitter {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(10deg);
+  }
+  45% {
+    transform: rotate(-5deg);
+  }
+  60% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(175deg);
+  }
+  90% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .notfound-container {
+    padding: 3rem 1.5rem;
+  }
+  
+  .notfound-code {
+    font-size: 4rem;
+  }
+}
